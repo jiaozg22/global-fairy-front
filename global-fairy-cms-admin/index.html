@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>了了的个人网站</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.5.2/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="js/jquery-easyui-1.5.2/themes/icon.css">
+    <script type="text/javascript" src="js/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-easyui-1.5.2/easyloader.js"></script>
+
+    <script type="text/javascript" src="components/common/event.js"></script>
+
+</head>
+<body class="easyui-layout">
+    <div data-options="region:'north'" style="height:50px">
+
+    </div>
+
+    <div data-options="region:'west',split:true" title="后台管理" style="width:150px;">
+        <div class="easyui-accordion" data-options="fit:true,border:false">
+            <div title="用户角色权限管理" style="padding:10px;">
+                <ul>
+                    <button onclick="showOnMain('userInfo')" name="用户管理">用户管理</button>
+                </ul>
+                <ul>
+                    <button onclick="showOnMain('roleInfo')" name="角色管理">角色管理</button>
+                </ul>
+                <ul>
+                    <button onclick="showOnMain('roleInfo')" name="权限管理">权限管理</button>
+                </ul>
+            </div>
+            <div title="Title2" data-options="selected:true" style="padding:10px;">
+                content2
+            </div>
+            <div title="Title3" style="padding:10px">
+                content3
+            </div>
+        </div>
+    </div>
+    <div id="main" data-options="region:'center',title:'后端工作台',iconCls:'icon-ok'">
+        <div id="main-tabs" class="easyui-tabs" data-options="fit:true,border:false,plain:true">
+
+            <div id = "mainTab" title="DataGrid" style="padding:5px">
+                <div id="toolbar" class="datagrid-toolbar">
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newItem()">新增</a>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editItem()">编辑</a>
+                    <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyItem()">删除</a>
+                </div>
+                <table id = "mainDataGrid" class="easyui-datagrid">
+                    <thead>
+                    <tr>
+                        <th field="username" width="50">username</th>
+                        <th field="password" width="50">password</th>
+                    </tr>
+                    </thead>
+                </table>
+                <div id="page" style="background:#efefef;border:1px solid #ccc;"></div>
+            </div>
+
+        </div>
+    </div>
+    <div data-options="region:'east',split:true" title="East" style="width:180px;">
+        <div class="easyui-panel" style="padding:5px">
+            <ul class="easyui-tree">
+                <li>
+                    <span>My Documents</span>
+                    <ul>
+                        <li data-options="state:'closed'">
+                            <span>Photos</span>
+                            <ul>
+                                <li>
+                                    <span>Friend</span>
+                                </li>
+                                <li>
+                                    <span>Wife</span>
+                                </li>
+                                <li>
+                                    <span>Company</span>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Program Files</span>
+                            <ul>
+                                <li>Intel</li>
+                                <li>Java</li>
+                                <li>Microsoft Office</li>
+                                <li>Games</li>
+                            </ul>
+                        </li>
+                        <li>index.html</li>
+                        <li>about.html</li>
+                        <li>welcome.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--<ul class="easyui-tree" data-options="url:'tree_data1.json',method:'get',animate:true,dnd:true"></ul>-->
+    </div>
+    <div data-options="region:'south',split:true" style="height:50px;align-items:center; text-align:center;line-height: 20px; align-content: center;">
+        @了了的的个人网站 Copyright © 2017 - 2020  <br />  <a href="#" title="焦氏软件 qq:1044640734">技术支持</a>
+    </div>
+
+</body>
+</html>

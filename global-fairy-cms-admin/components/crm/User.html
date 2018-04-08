@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../..//js/jquery-easyui-1.5.2/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../../js/jquery-easyui-1.5.2/themes/icon.css">
+    <link rel="stylesheet" type="text/css" href="../../js/jquery-easyui-1.5.2/demo.css">
+    <script type="text/javascript" src="../../js/jquery-easyui-1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/jquery-easyui-1.5.2/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../../components/crm/UserDataGrid.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <table id="userDataGrid" title="用户管理" class="easyui-datagrid" style="width:550px;height:250px"
+           toolbar="#toolbar"
+           fitColumns="true"
+           data-options="singleSelect:true,collapsible:true,url:'http://localhost:8080/global-fairy-cms-admin-web/crm/userinfo/list',method:'get'">
+        <thead>
+        <tr>
+            <th field="username" width="50">username</th>
+            <th field="password" width="50">password</th>
+        </tr>
+        </thead>
+    </table>
+
+    <div id="toolbar">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newUser()">New User</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editUser()">Edit User</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="destroyUser()">Remove User</a>
+    </div>
+
+    <div id="dlg" class="easyui-dialog" style="width:400px;height: 280px;padding: 10px 20px"
+                    closed="true" buttons="#dlg-buttons">
+        <div class="ftitle">用户信息</div>
+        <form id="fm" method="post">
+            <div class="fitem">
+                <label>用户名:</label>
+                <input name="username">
+            </div>
+            <div class="fitem">
+                <label>密码:</label>
+                <input name="password">
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveUser()">保存</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">取消</a>
+    </div>
+
+    <!--<div id="dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
+         closed="true" buttons="#dlg-buttons">
+        <div class="ftitle">User Information</div>
+        <form id="fm" method="post">
+            <div class="fitem">
+                <label>First Name:</label>
+                <input name="firstname" class="easyui-validatebox" required="true">
+            </div>
+            <div class="fitem">
+                <label>Last Name:</label>
+                <input name="lastname" class="easyui-validatebox" required="true">
+            </div>
+            <div class="fitem">
+                <label>Phone:</label>
+                <input name="phone">
+            </div>
+            <div class="fitem">
+                <label>Email:</label>
+                <input name="email" class="easyui-validatebox" validType="email">
+            </div>
+        </form>
+    </div>
+    <div id="dlg-buttons">
+        <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="saveUser()">Save</a>
+        <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#dlg').dialog('close')">Cancel</a>
+    </div>-->
+
+</body>
+</html>

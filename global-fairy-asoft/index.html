@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>global-fariy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normal.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>-->
+  <script src="js/jquery.js"></script>
+  <script src="js/config.js"></script>
+
+<!--  <script>
+    if (/mobile/i.test(navigatoruserAgent)) document.documentElement.className += ' w-mobile';
+  </script>-->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+
+</head>
+<body>
+  <div class="fix-header" id="home">
+    <div class="w-container">
+      <div class="w-nav" data-collapse="medium" data-animation="default" data-duration="400"></div>
+    </div>
+  </div>
+  <div class="fixed-header">
+    <div class="w-container container">
+      <div class="w-row">
+       <!--///////////////////////////////////////////////////////
+       // Logo section 
+       //////////////////////////////////////////////////////////-->
+        <div class="w-col w-col-3 logo">
+          <a href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+        </div>
+        <!--///////////////////////////////////////////////////////
+       // End Logo section 
+       //////////////////////////////////////////////////////////-->
+        <div class="w-col w-col-9">
+       <!--///////////////////////////////////////////////////////
+       // Menu section 
+       //////////////////////////////////////////////////////////-->
+          <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1">
+            <div class="w-container nav">
+              <nav class="w-nav-menu nav-menu" role="navigation">
+
+                <a class="w-nav-link menu-li" href="#home">理念</a>
+                <a class="w-nav-link menu-li" href="#about">设计自动化</a>
+                <a class="w-nav-link menu-li" href="#service">编程自动化</a>
+                <a class="w-nav-link menu-li" href="#our-plans">测试自动化</a>
+                <a class="w-nav-link menu-li"href="#team">运维自动化</a>
+                <a class="w-nav-link menu-li" href="#contact">工程自动化</a>
+              </nav>
+              <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+              </div>
+            </div>
+          </div>
+          <!--///////////////////////////////////////////////////////
+       // End Menu section 
+       //////////////////////////////////////////////////////////-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--///////////////////////////////////////////////////////
+       //  Slider section 
+       //////////////////////////////////////////////////////////-->
+  <div class="slidersection">
+    <div class="sp-slideshow">
+      
+        <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+        <label for="button-1" class="button-label-1"></label>
+        
+        <input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+        <label for="button-2" class="button-label-2"></label>
+        
+        <input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+        <label for="button-3" class="button-label-3"></label>
+        
+        <input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+        <label for="button-4" class="button-label-4"></label>
+        
+        <input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+        <label for="button-5" class="button-label-5"></label>
+        
+        <label for="button-1" class="sp-arrow sp-a1"></label>
+        <label for="button-2" class="sp-arrow sp-a2"></label>
+        <label for="button-3" class="sp-arrow sp-a3"></label>
+        <label for="button-4" class="sp-arrow sp-a4"></label>
+        <label for="button-5" class="sp-arrow sp-a5"></label>
+        
+        <div class="sp-content">
+          <div class="sp-parallax-bg"></div>
+          <ul class="sp-slider clearfix">
+          <li><img src="images/slider/slider1.png" alt="image01" /></li>
+          <li><img src="images/slider/slider2.png" alt="image02" /></li>
+          <li><img src="images/slider/slider3.png" alt="image03" /></li>
+          <li><img src="images/slider/slider4.png" alt="image04" /></li>
+          <li><img src="images/slider/slider5.png" alt="image05" /></li>
+        </ul>
+        </div><!-- sp-content -->
+        
+      </div><!-- sp-slideshow -->
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // End slider section 
+       //////////////////////////////////////////////////////////-->
+<!--///////////////////////////////////////////////////////
+       // About section 
+       //////////////////////////////////////////////////////////-->
+
+
+  <div class="about-parlex" id="about">
+    <section class="parlex7-back">
+      <div class="w-container">
+        <div id="about-animation">
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script  src="js/module/about.js"></script>
+
+<!--///////////////////////////////////////////////////////
+       // End about section 
+       //////////////////////////////////////////////////////////-->
+
+
+  
+<!--///////////////////////////////////////////////////////
+       // Who We Are Section
+       //////////////////////////////////////////////////////////-->
+
+
+  <div class="exp service-parlex">
+    <div class="exp-back">
+      <div class="w-container">
+        <div id="who-v-animation">
+        <div class="wrap">
+          <div class="w-row exp-des">
+            <div class="w-col w-col-6 exp-col1">
+              <div class="col1-div">
+                <div class="experinc-box">
+                <h3 class="experinc-box-h3">编程自动化</h3>
+                <p>在代码编写阶段，很多工作可以借助于插件生成模式化的代码，例如ORM框架生成的操作数据库代码</br> 随着框架技术的成熟，以及相关框架的规范化，spring boot等约定大于配置的理念的加深，使得人们对编写代码有了统一的行为模式，这也就催生了代码生成工具。我们可以直接使用代码生成工具，生成约定规范下的代码.</p>
+                <div class="buttons">
+                <div class="btn-ex-one">
+                  <a class="ex-btn" href="#">更多（暂无）</a>
+                </div>
+                <div class="btn-ex-two">
+                  <a class="ex-btn-two" href="#">建议（欢迎通过二维码关注公众号）</a>
+                </div>
+              </div>
+              </div>
+              </div>
+            </div>
+            <div class="w-col w-col-6 exp-col2">
+              <div class="col2-div">
+                <img src="images/who-we-are.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!--///////////////////////////////////////////////////////
+       // End Who We Are section 
+       //////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////////////////////////////////////
+       // Call to action section 
+       //////////////////////////////////////////////////////////--> 
+
+
+  <div class="call-to-action">
+    <div class="call-to-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="w-row call-row">
+            <div class="w-col w-col-9 cal-col-1">
+              <h3 class="call-to-h3">global-fairy | 企业信息一体化</h3>
+              <p>专注解决简化软件开发流程，提高开发效率，降低人力资源成本. </p>
+            </div>
+            <div class="w-col w-col-3"><a class="call-to-butn" href="#">咨询请关注微信公众号-夸克度</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--///////////////////////////////////////////////////////
+       // End call to action section 
+       //////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////
+       // Service section 
+       //////////////////////////////////////////////////////////-->
+
+
+  <section class="service-parlex" id="service">
+    <section class="parlex-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="service-combo">
+            <div class="services">
+              <h1 class="service-heading">编程自动化</h1>
+              <div class="services-text">代码编写阶段的代码自动生成</div>
+              <div class="sepreater service"></div>
+            </div>
+            <div class="services-text">“ 前端代码生成|ORM持久化代码生成|spring boot 分层次框架代码生成|模板代码生成”
+              <br>我在代码编写阶段，很多工作可以借助于插件生成模式化的代码，例如ORM框架生成的操作数据库代码</br> 随着框架技术的成熟，以及相关框架的规范化，spring boot等约定大于配置的理念的加深，使得人们对编写代码有了统一的行为模式，这也就催生了代码生成工具。我们可以直接使用代码生成工具，生成约定规范下的代码.</p></div>
+            <div class="w-row">
+              <div class="w-col w-col-3 services-column">
+                <div class="service-icon">
+                  <img src="images/services/Web-Design-Development.png">
+                </div>
+                <h4 class="service-head">前端代码生成</h4>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="service-icon">
+                  <img src="images/services/Branding-Identity.png">
+                </div>
+                <h4 class="service-head">ORM持久化代码生成</h4>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="service-icon">
+                  <img src="images/services/Motion-Video.png">
+                </div>
+                <h4 class="service-head">spring boot 分层次框架代码生成</h4>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="service-icon">
+                  <img src="images/services/UX-UI.png">
+                </div>
+                  <h4 class="service-head">模板代码生成</h4></br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<!--///////////////////////////////////////////////////////
+       // End Service section 
+       //////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////////////////////////////////
+       // Process section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="process-parlex">
+    <div class="parlex2-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="process">
+            <h1 class="our-process-heading">代码生成工具</h1>
+            <div class="sepreater"></div>
+          </div>
+          <div class="process-text">
+            <div class="process-text">hibernate/mybatis插件</div>
+            <div class="w-row">
+              <div class="w-col w-col-3">
+                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                   <a href="#set-1" class="hi-icon hi-icon-locked">Security</a>
+                </div>
+                <h4 class="our-process-sys">jeecg</h4>
+                <p class="process-paragraph">一款半自动化的开源平台软件，表单与界面同时生成</p>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+          <a href="#set-1" class="hi-icon hi-icon-mobile">Mobile</a>
+        </div>
+                <h4 class="our-process-sys"></h4>
+                <p class="process-paragraph">github有托管.</p>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+          <a href="#set-1" class="hi-icon hi-icon-screen">Desktop</a>
+        </div>
+                <h4 class="our-process-sys">spring boot.</h4>
+                <p class="process-paragraph">分层代码约定大于配置。因此在此基础上，可以直接生成分层次的代码，而无需手动编写各个层次的代码.</p>
+              </div>
+              <div class="w-col w-col-3">
+                <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+          <a href="#set-1" class="hi-icon hi-icon-earth">Partners</a>
+        </div>
+                <h4 class="our-process-sys">前端代码自动化</h4>
+                <p class="process-paragraph">通过数据的展示方式，生成相对应的展示方式。js代码生成js代码.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Process section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Porfolio section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="portfolio-parlex" id="portfolio">
+    <div class="parlex3-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="portfolio">
+            <h1 class="portfolio-heading"></h1>
+            <div class="portfolio-text">软件编程自动化进展</div>
+            <div class="sepreater"></div>
+          </div>
+          <p class="porfolio-paragraph">现有阶段是以插件方式为主，相信不久的将来，会形成专门的自动化框架
+            <br>遥远的未来，人工智能发展，会取代我们现有的开发模式，以机器思维生成机器代码，既快速，又专业。.</p>
+            <div class="container demo-1">
+      <ul class="grid cs-style-1">
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/1.jpg" alt="img01">
+            <figcaption>
+              <h3>Camera</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/2.jpg" alt="img02">
+            <figcaption>
+              <h3>Music</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/4.jpg" alt="img04">
+            <figcaption>
+              <h3>Settings</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/5.jpg" alt="img05">
+            <figcaption>
+              <h3>Safari</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/3.jpg" alt="img03">
+            <figcaption>
+              <h3>Phone</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/6.jpg" alt="img06">
+            <figcaption>
+              <h3>Game Center</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/7.jpg" alt="img06">
+            <figcaption>
+              <h3>Game Center</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/8.jpg" alt="img06">
+            <figcaption>
+              <h3>Game Center</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img class="portfolio-images" src="images/portfolio/9.jpg" alt="img06">
+            <figcaption>
+              <h3>Game Center</h3>
+              <span>Jacob Cummings</span>
+              <a href="#">Take a look</a>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div><!-- /container -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Porfolio section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Our-plan section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="our-plan-parlex" id = "our-plans">
+    <div class="parlex4-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="our-plans">
+            <h1 class="ourplan-heading">测试自动化</h1>
+            <div class="our-plan-text">选择合适您的测试工具</div>
+          </div>
+          <div class="sepreater"></div>
+          <p class="our-plan-paragraph">您可以根据具体需要选择适合自己的测试工具
+            <br>如果您使用其他测试工具，请通过微信公众号告诉我们.</p>
+          <div class="w-row">
+            <div class="w-col w-col-3">
+              <div class="plan1">
+                <div class="plan1-ser1">
+                  <h4>jmeter</h4>
+                  <div class="price">版本</div>
+                </div>
+                <p class="plan1-ser1-para">
+                  <br>jmeter作为Apache的一个项目，拥有着不少用户群体
+                  <br>
+                  <br>jmeter官网
+                  <br>
+                  <br>自动化测试教程
+                  <br>
+                  <br>自动化测试优势
+                  <br>
+                  <br>防止测试重复劳动</p><a class="plan-1-butn" href="#">学习交流，搜索csdn账号 水上冰石!</a>
+              </div>
+            </div>
+            <div class="w-col w-col-3">
+              <div class="plan1 plan2">
+                <div class="plan2-ser2">
+                  <h4>postman</h4>
+                  <div class="price">版本</div>
+                </div>
+                <p class="plan1-ser1-para">
+                  <br>提供测试集合
+                  <br>
+                  <br>可以使用全局变量等
+                  <br>
+                  <br>测试结果判断以及集成测试流程测试分叉
+                  <br>
+                  <br>测试脚本化
+                  <br>
+                  <br>获取教程</p><a class="plan-1-butn2 plan-1-butn" href="#">学习交流!</a>
+              </div>
+            </div>
+            <div class="w-col w-col-3">
+              <div class="plan1 plan3">
+                <div class="plan1-ser1 plan3-ser3">
+                  <h4>Jenkins</h4>
+                  <div class="price">版本 / 最新</div>
+                </div>
+                <p class="plan1-ser1-para">
+                  <br>通使用jenkins，直接进行测试脚本的部署
+                  <br>
+                  <br>通过jenkins提供的一体化中的测试部分，进行对测试结果的测试
+                  <br>
+                  <br>jenkins官网
+                  <br>
+                  <br>测试脚本编写
+                  <br>
+                  <br>一个简单的demo</p><a class="plan-1-butn plan-1-butn3" href="#">学习交流!</a>
+              </div>
+            </div>
+            <div class="w-col w-col-3">
+              <div class="plan1 plan4">
+                <div class="plan1-ser1 plan4-ser4">
+                  <h4>其他</h4>
+                  <div class="price">版本</div>
+                </div>
+                <p class="plan1-ser1-para">
+                  <br>测试工具有很多
+                  <br>
+                  <br>如果您有更好的测试工具，请联系我们
+                  <br>
+                  <br>如果您有自动化测试的好的想法，欢迎沟通学习，一起成长
+                  <br>
+                  <br>如果您有完整的测试实际经验，请联系我们
+                  <br>
+                  <br>其他</p><a class="plan-1-butn plan-4-butn4" href="#">学习交流！</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Our-Plan section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Team section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="team-parlex" id="team">
+    <div class="parlex5-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="team">
+            <h1 class="team">运维自动化</h1>
+            <div class="sepreater team-sep"></div>
+          </div>
+          <div class="team-text">
+            <p class="team-text-para">devops运维自动化，主要是GitHub等代码托管平台与jenkins结合.&nbsp;使用容器docker技术，跨平台部署
+              <br>我们的团队.</p>
+          </div>
+          <div class="w-row team-member">
+            <div class="w-col w-col-4">
+              <div class="team-section">
+                <div class="team-image">
+                  <img class="team-img" src="images/team/photo1.png" alt="52dd1e57e64ce6cb200004f3_image1.png">
+                </div>
+                <div class="team-des">
+                  <h4 class="team-name">李润华</h4>
+                  <div class="team-name-des">注册会计师</div>
+                </div>
+                <div class="team-social">
+                  <div class="w-clearfix social-section">
+                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
+                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
+                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
+                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
+                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-col w-col-4">
+              <div class="team-section">
+                <div class="team-image">
+                  <img class="team-img" src="images/team/photo2.png" alt="52dd1edfe64ce6cb200004fb_image2.png">
+                </div>
+                <div class="team-des">
+                  <h4 class="team-name">张光晋</h4>
+                  <div class="team-name-des">Android开发</div>
+                </div>
+                <div class="team-social">
+                  <div class="w-clearfix social-section">
+                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
+                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
+                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
+                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
+                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-col w-col-4">
+              <div class="team-section">
+                <div class="team-image">
+                  <img class="team-img" src="images/team/photo3.png" alt="52dd1efcad165eca20000539_image3.png">
+                </div>
+                <div class="team-des">
+                  <h4 class="team-name">焦宗官</h4>
+                  <div class="team-name-des">java开发</div>
+                </div>
+                <div class="team-social">
+                  <div class="w-clearfix social-section">
+                    <a href="https://www.facebook.com/"><img class="social" src="images/social/Facebook.png" alt="52dd249c929b601f5400054c_Facebook.png"></a>
+                    <a href="https://www.twitter.com/"><img class="social" src="images/social/Twitter.png" alt="52dd24f2929b601f54000551_Twitter.png"></a>
+                    <a href="https://www.linkedin.com/"><img class="social" src="images/social/Linkedin.png" alt="52dd2672e64ce6cb2000053a_Linkedin.png"></a>
+                    <a href="https://plus.google.com/"><img class="social" src="images/social/Google-plus.png" alt="52dd26a55b54031d540005af_Google-plus.png"></a>
+                    <a href="https://www.rss.com/"><img class="social" src="images/social/RSS.png" alt="52dd26d25b54031d540005b4_RSS.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Team section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Clients section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="clients-parlex">
+    <div class="parlex6-back">
+      <div class="w-container">
+        <div class="wrap-client">
+          <div class="clients-sub">
+            <div id="clients">
+        <div class="clients-wrap">
+          <ul id="clients-list" class="clearfix">
+            <li><img src="images/clients/client-logo1.png" alt="logo"></li>
+            <li><img src="images/clients/client-logo2.png" alt="logo"></li>
+            <li><img src="images/clients/client-logo3.png" alt="logo"></li>
+            <li><img src="images/clients/client-logo4.png" alt="logo"></li>
+            <li><img src="images/clients/client-logo5.png" alt="logo"></li>
+            <li><img src="images/clients/client-logo6.png" alt="logo"></li>
+          </ul>
+        </div><!-- @end .clients-wrap -->
+      </div><!-- @end #clients -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyrights">Collect from <a href="#" >手机网站模板</a></div>
+
+<!--///////////////////////////////////////////////////////
+       // End Clients section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Contact section 
+       //////////////////////////////////////////////////////////-->
+
+  <div class="contact-parlex" id="contact">
+    <div class="parlex8-back">
+      <div class="w-container">
+        <div class="wrap">
+          <div class="contact-div">
+            <h1 class="contact-heading">工程自动化</h1>
+            <div class="sepreater"></div>
+          </div>
+          <p class="contact-para">软件工程自动化!
+            <br>欢迎和我们一起探讨软件工程自动化相关的内容!</p>
+          <div class="w-form">
+            <form action="http://localhost:8080/cms/contact_add" method="post">
+            <label>名字:</label>
+             <input class="w-input" type="text" placeholder="Enter your name" name="cf_name">
+           <label>Email 地址:</label>
+             <input class="w-input" placeholder="Enter your email address" type="text" name="cf_email" required="required">
+           <label >内容:</label>
+             <textarea class="w-input message" placeholder="Enter your Message Here" name="cf_message"></textarea><br>
+           <input class="w-button" type="submit" value="提交">
+         </form>
+          <div class="w-form-done">
+              <p>谢谢您的反馈！</p>
+            </div>
+            <div class="w-form-fail">
+              <p>抱歉！提交失败，请重新提交！ :(</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+     
+      <div class="w-container">
+        <div class="w-row contact-col">
+          <div class="w-col w-col-4 contact-col1">
+            <div>
+                      <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                       <a href="#set-5" class="hi-icon hi-icon-earth">Partners</a>
+                    </div>
+              <h4 class="contact-col-head">联系我们</h4>
+            </div>
+            <div>
+              <div class="contact-col-text">上海市
+                <br>闵行区</div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 contact-col2">
+            <div>
+               <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                       <a href="#set-5" class="hi-icon hi-icon-mail">Partners</a>
+                    </div>
+              <h4 class="contact-col-head">邮件</h4>
+            </div>
+            <div>
+              <div class="contact-col-text">jiao_zg22@163.com
+                <br>支持: jiao_zg22@163.com</div>
+            </div>
+          </div>
+          <div class="w-col w-col-4 contact-col3">
+            <div>
+              <div class="hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a">
+                       <a href="#set-5" class="hi-icon hi-icon-mobile">Partners</a>
+                    </div>
+              <h4 class="contact-col-head">电话</h4>
+            </div>
+            <div>
+              <div class="contact-col-text-bar-last">13468312964
+                <br>13468312964</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--///////////////////////////////////////////////////////
+       // End Contact section 
+       //////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////////////////////////////////
+       // Footer section 
+       //////////////////////////////////////////////////////////-->  
+
+  <div class="footer-parlex">
+    <div class="parlex9-back">
+      <div class="w-container">
+        <div class="wrap">
+          <img class="footer-logo" src="images/footer-logo.png" alt="Elegance">
+          <div class="footer-social">
+            <div class="fotter-social-wrap">
+              <div class = "bshare-custom" style="text-align:center">
+                <a title="分享到QQ空间" class="bshare-qzone"></a>
+                <a title="分享到新浪微博" class="bshare-sinaminiblog"></a>
+                <a title="分享到人人网" class="bshare-renren"></a>
+                <a title="分享到腾讯微博" class="bshare-qqmb"></a>
+                <a title="分享到网易微博" class="bshare-neteasemb"></a>
+                <a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                <span class="BSHARE_COUNT bshare-share-count">0</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="fotter-text"><p class="fotter-quote">“鲁ICP备 17046116 | 版权所有，侵权必究. ”</p>
+              <p class="copyright-area">©2017 . 08- 2027 . 08</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       <!--///////////////////////////////////////////////////////
+       // End Footer section 
+       //////////////////////////////////////////////////////////-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+  <!--<script type="text/javascript" src="js/normal.js"></script>-->
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/carousels.js"></script>
+  <script type="text/javascript" src="js/slider-modernizr.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+  <<!--script src="js/portfolio-effects.js"></script>
+  <script src="js/toucheffects.js"></script>-->
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/animation.js"></script>
+  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+  <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+</body>
+</html>
