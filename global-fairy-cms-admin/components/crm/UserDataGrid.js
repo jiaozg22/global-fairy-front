@@ -15,6 +15,7 @@ $('#mainDataGrid').datagrid({
             jsonpCallback: 'callback', //设置回调函数名
             data: {
                 'total': '',
+
                 'rows':[
                     {
                         'id':'1',
